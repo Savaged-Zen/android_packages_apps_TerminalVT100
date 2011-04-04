@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package jackpal.androidterm;
+package jackpal.androidterm2;
 
 import java.io.FileDescriptor;
 import java.io.FileInputStream;
@@ -3072,6 +3072,14 @@ class EmulatorView extends View implements GestureDetector.OnGestureListener {
                     Log.w(TAG, "setSelection" + arg0 + "," + arg1);
                 }
                 return true;
+            }
+
+            public boolean setComposingRegion(int start, int end) {
+                return true;
+            }
+	    
+            public CharSequence getSelectedText(int flags) {
+                return null;
             }
         };
     }
