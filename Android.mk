@@ -28,7 +28,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(call all-subdir-java-files)
 
-LOCAL_PACKAGE_NAME := AndroidTerm
+LOCAL_PACKAGE_NAME := Terminal
 
 LOCAL_OVERRIDES_PACKAGES := Term
 
